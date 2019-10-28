@@ -1,0 +1,67 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Värd: localhost
+-- Tid vid skapande: 28 okt 2019 kl 10:34
+-- Serverversion: 10.1.37-MariaDB
+-- PHP-version: 7.3.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Databas: `courses`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellstruktur `courses`
+--
+
+CREATE TABLE `courses` (
+  `id` int(11) NOT NULL,
+  `code` varchar(20) NOT NULL,
+  `name` varchar(128) NOT NULL,
+  `prog` varchar(11) NOT NULL,
+  `plan` varchar(280) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumpning av Data i tabell `courses`
+--
+
+INSERT INTO `courses` (`id`, `code`, `name`, `prog`, `plan`) VALUES
+(1, 'DT057G', 'Webbutveckling I', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=17948'),
+(2, 'DT084G', 'Introduktion till programmering med JavaScript', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21877'),
+(124, 'DT163G ', 'Digital bildbehandling fÃ¶r webb', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21898'),
+(126, 'GD008G', 'Typografi och form fÃ¶r webb', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21669'),
+(127, 'DT003G', 'Databaser', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21595'),
+(129, 'DT093G', 'Webbutveckling II ', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21874'),
+(130, 'DT068G', 'WebbanvÃ¤ndbarhet', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=19699'),
+(131, 'DT152G', 'Webbdesign fÃ¶r CMS', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21872');
+
+--
+-- Index för dumpade tabeller
+--
+
+--
+-- Index för tabell `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `coursecode` (`code`);
+
+--
+-- AUTO_INCREMENT för dumpade tabeller
+--
+
+--
+-- AUTO_INCREMENT för tabell `courses`
+--
+ALTER TABLE `courses`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=132;
+COMMIT;

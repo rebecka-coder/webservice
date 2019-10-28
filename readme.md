@@ -27,4 +27,4 @@ För att komma åt databasen har jag exporterat den till en fil med denna reposi
 
 ## Länk till webbtjänsten
 
-[Webbtjänst]()
+[Webbtjänst](http://studenter.miun.se/~reho0301/dt173g/moment5/webservice/webservice.php)
