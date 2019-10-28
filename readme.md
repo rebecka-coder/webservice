@@ -23,7 +23,7 @@ iväg hela webbtjänst-projektet vidare till repon.
 
 ## Fil till databasen
 
-För att komma åt databasen har jag exporterat den till en fil med denna repositorie.
+För att komma åt databasen har jag exporterat den till en fil med denna repositorie, som heter db.txt
 
 ## Länk till webbtjänsten
 
